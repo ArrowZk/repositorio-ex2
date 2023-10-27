@@ -1,0 +1,86 @@
+#carousel-main {
+    max-width: 80%; /* Ajusta este valor según tus necesidades */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+p {
+    color: #333; /* Color del texto del párrafo */
+    width: 80%; /* Ajusta el ancho del párrafo según tus preferencias */
+    margin: 0 auto; /* Centra el párrafo horizontalmente */
+    text-align: justify; /* Justifica el texto para que los saltos de línea sean automáticos */
+}
+.event {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #7d9dd8;
+    background-color: #dde9ff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.event h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Estilos generales */
+body {
+    background-color: #f2f7fd; /* Color de fondo principal */
+    color: #333; /* Color de texto principal */
+}
+
+.container {
+    margin: 30px auto; /* Margen alrededor del contenedor principal */
+}
+
+/* Estilos para la barra de navegación */
+#main-navbar {
+    background-color: #173757; /* Color de fondo de la barra de navegación */
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff; /* Color del texto del brand */
+    margin-right: 15%; /* Ajusta este valor para separar más la marca de los elementos */
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    color: #5a80e6; /* Color del texto de los enlaces */
+}
+
+#imag-lat p{
+    margin-top: 10px;
+    font-size: 14px;
+}
+/* Estilos de los títulos */
+h1, h2, h3, h4, h5, h6 {
+    color: #001f3f; /* Color de los títulos */
+}
+
+/* Estilos de los botones */
+.btn-primary {
+    background-color: #0074D9; /* Color de fondo del botón primario */
+    border-color: #0074D9; /* Color del borde del botón primario */
+}
+
+.btn-primary:hover {
+    background-color: #00509d; /* Color de fondo del botón primario al pasar el mouse */
+    border-color: #00509d; /* Color del borde del botón primario al pasar el mouse */
+}
+
+/* Estilos del footer */
+.footer {
+    background-color: #001f3f; /* Color de fondo del footer */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    color: #fff; /* Color del texto del footer */
+}

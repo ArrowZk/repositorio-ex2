@@ -1,9 +1,0 @@
-#carousel-main {
-    max-width: 80%; /* Ajusta este valor según tus necesidades */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-}
-p {
-    width: 80%; /* Ajusta el ancho del párrafo según tus preferencias */
-    margin: 0 auto; /* Centra el párrafo horizontalmente */
-    text-align: justify; /* Justifica el texto para que los saltos de línea sean automáticos */
-}
