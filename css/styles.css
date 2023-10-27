@@ -104,7 +104,7 @@ p {
 
 /*Para carousel*/
 #carousel-main {
-    max-width: 80%; /* Ajusta este valor según tus necesidades */
+    max-width: 80%; /* ajustar tamaño */
     margin: 0 auto; /* Centra el contenedor horizontalmente */
 }
 /*Para la imagen en el texto*/
@@ -219,4 +219,21 @@ p {
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
+}
+.mapa {
+    display: flex;
+    justify-content: center;
+}
+#img-curiosidades{
+    padding-top: 40px;
+}
+/*para la galeria de imagenes*/
+#carousel-gal {
+    max-width: 85%;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding-bottom: 70px;
+}
+#carousel-gal .carousel-item img {
+    object-fit: cover;
+    height: 900px; /* Ajusta la altura según tus necesidades */
 }
