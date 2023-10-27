@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>J-Rock</title>
 
-    <!-- Incluye los estilos de Bootstrap -->
+    <!-- Estilos de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Agrega tus estilos CSS personalizados -->
+    <!-- Estilos CSS personalizados -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- Fuentes de Google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
 </head>
 <body>
 
-    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav id="main-navbar" class="navbar navbar-expand-lg bg-primary">
         <div class="container">
             <a class="navbar-brand" href="index.html">Bandas de J-Rock</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,18 +48,31 @@
     
 
     <!-- Carrusel de Imágenes -->
-    <div id="carousel-main" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/sc1.jpg" class="d-block w-100" alt="Imagen 1">
-            </div>
-            <div class="carousel-item">
-                <img src="img/fw1.jpg" class="d-block w-100" alt="Imagen 2">
-            </div>
-            <!-- Agrega más imágenes según sea necesario -->
-        </div>
+<div id="carousel-main" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/sc1.jpg" class="d-block w-100" alt="Imagen 1">
+      </div>
+      <div class="carousel-item">
+        <img src="img/fw1.jpg" class="d-block w-100" alt="Imagen 2">
+      </div>
+      <!-- Agrega más imágenes según sea necesario -->
     </div>
-
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-main" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel-main" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carousel-main" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carousel-main" data-bs-slide-to="1"></li>
+      <!-- Agrega más indicadores según sea necesario -->
+    </ol>
+  </div>
+  
     <!-- Introducción al J-Rock -->
     <div class="container mt-4">
         <div class="row">
@@ -93,6 +106,7 @@
                     <p>
                         El J-Rock ha visto emerger una serie de bandas icónicas que han dejado una marca indeleble en la escena musical japonesa. Algunas de las bandas más influyentes incluyen a X Japan, L'Arc-en-Ciel, The Gazette, Luna Sea, One OK Rock, Scandal y Asian Kung-fu Generation. Estas bandas han conquistado audiencias en Japón y en todo el mundo con su talento y creatividad. Además de los mencionados anteriormente, el J-Rock alberga una variedad de talentos musicales que han dejado una marca indeleble en la escena global. Bandas como RADWIMPS, cuyas melodías emotivas y letras introspectivas han resonado con audiencias de todo el mundo, y BABYMETAL, que ha revolucionado la escena con su fusión única de heavy metal y pop, son ejemplos de la diversidad y la innovación dentro del género. Asimismo, bandas más recientes como Band-Maid y Crossfaith han aportado un aire fresco con su enfoque enérgico y sus sonidos modernos, manteniendo vivo el legado del J-Rock para las generaciones futuras.
                     </p>
+                    <img id="imgbp" src="img/paramain.jpg" class="img-fluid" alt="Imagen relacionada con J-Rock">
                 </div>
 
                 <!-- Influencia del Anime -->
@@ -113,6 +127,18 @@
                 <div class="mt-4">
                 <img src="img/paramain3.jpg" class="img-fluid" alt="Imagen relacionada con J-Rock">
                 <p>Escenario Green en el Fuji Rock Festival.</p></div>
+                <div class="mt-4">
+                <img src="img/paramain4.jpg" class="img-fluid" alt="Imagen relacionada con J-Rock">
+                <p>Scandal en concierto conmemorativo de su 10 aniversario.</p></div>
+                <div class="mt-4">
+                <img src="img/paramain5.jpg" class="img-fluid" alt="Imagen relacionada con J-Rock">
+                <p>Uverworld en concierto en Shibuya.</p></div>
+                <div class="mt-4">
+                <img src="img/paramain6.jpg" class="img-fluid" alt="Imagen relacionada con J-Rock">
+                <p>Flow interpretando canciones del anime Naruto.</p></div>
+                <div class="mt-4">
+                <img src="img/paramain7.jpg" class="img-fluid" alt="Imagen relacionada con J-Rock">
+                <p>Conicerto Maximum the Hormone.</p></div>
             </div>
         </div>
     </div>
@@ -213,11 +239,11 @@
       </script>
       
       
-    <!-- Resto de tu contenido HTML -->
+    <!-- Seccion de suscripcion -->
 
     <div id="susc" class="container mt-4">
         <div class="row">
-            <div class="col-lg-11">
+            <div class="col-lg-12">
                 <h2>Suscríbete para recibir actualizaciones</h2>
                 <form>
                     <div class="mb-3">
@@ -233,7 +259,7 @@
         </div>
     </div>
 
-    <!-- Incluye Bootstrap JavaScript y tu JavaScript personalizado -->
+    <!-- Importar script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
     <!-- Footer -->

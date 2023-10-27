@@ -1,29 +1,132 @@
-body {
-    font-family: 'Roboto', sans-serif;
+/*----------------------------- Estilos generales para todas las paginas -----------------------------------*/
+/* Estilos para la barra de navegación */
+#main-navbar.navbar {
+    background-color: hsl(316, 100%, 90%) !important; /* Color de fondo de la barra */
 }
+#main-navbar .navbar-brand {
+    font-size: 35px;
+    font-weight: bold;
+    color: #002467; /* Color del texto del brand */
+    margin-right: 15%; /* Para separar más la marca de los elementos */
+}
+
+#main-navbar .navbar-nav .nav-link {
+    font-size: 25px;
+    color: #0b256e; /* Color del texto de los enlaces */
+}
+
+/* Cambiar color al pasar el cursor sobre los elementos de la barra */
+#main-navbar .navbar-nav .nav-link:hover {
+    color: rgb(234, 86, 210); /* Color al pasar el cursor sobre los enlaces */
+    font-size: 27px;
+}
+#main-navbar .navbar-brand:hover {
+    color: #b131ad; /* Color del texto del brand al pasar el cursor sobre los enlaces */
+}
+#main-navbar .navbar-nav .nav-link.active,
+#main-navbar .navbar-nav .nav-link:active {
+    color: #b131ad; /* Cambia a un color diferente cuando el enlace está activo */
+    font-size: 27px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;/*Implementar fuente de google*/
+    background-color: #f2f7fd; /* Color de fondo principal */
+    color: #333; /* Color de texto principal */
+}
+
+.container {
+    margin: 30px auto; /* Margen alrededor del contenedor principal */
+}
+/*Para los logos*/
+
+#logo{
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    width: 350px;
+    padding: 20px;
+}
+#logo p{
+    text-align: center;
+    padding: 10px;
+}
+
 /* Estilos de los títulos */
 h1, h2, h3, h4, h5, h6 {
     color: #001f3f; /* Color de los títulos */
-    padding-top: 30px;
+    padding: 30px;
 }
 h1{
     text-align: center;
     padding-bottom: 30px;
+    font-size: 70px;
 }
 h2{
+    text-align: center;
     font-size: 40px;
-}
-#carousel-main {
-    max-width: 80%; /* Ajusta este valor según tus necesidades */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding-bottom: 20px;
 }
 p {
     color: #333; /* Color del texto del párrafo */
-    width: 80%; /* Ajusta el ancho del párrafo según tus preferencias */
+    width: 80%; /* Ajusta el ancho del párrafo*/
     margin: 0 auto; /* Centra el párrafo horizontalmente */
     text-align: justify; /* Justifica el texto para que los saltos de línea sean automáticos */
     font-size: 20px;
 }
+/* Estilos de los botones */
+.btn-primary {
+    background-color: #d114ab; /* Color de fondo del botón primario */
+    border-color: #d21b58; /* Color del borde del botón primario */
+    font-size: 25px; /* Tamaño de la fuente del botón */
+    padding: 10px 20px; /* Ajusta el relleno para cambiar el tamaño del botón */
+}
+
+.btn-primary:hover {
+    background-color: #7de97d; /* Color de fondo del botón primario al pasar el mouse */
+    border-color: #149a49; /* Color del borde del botón primario al pasar el mouse */
+    color: #333;
+}
+
+/* Estilos del footer */
+.footer {
+    justify-content: center;
+    align-items: center;
+    background-color: #001f3f; /* Color de fondo del footer */
+    padding: 20px;
+}
+
+.footer p {
+    color: #fff; /* Color del texto del footer */
+}
+
+/*------------------------------------ para main ------------------------------------- */
+
+/*Para carousel*/
+#carousel-main {
+    max-width: 80%; /* Ajusta este valor según tus necesidades */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+/*Para la imagen en el texto*/
+#imgbp {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+/*Para las imagenes del lateral*/
+#imag-lat{
+    background-color: hsl(317, 100%, 96%);
+    padding-top: 100px;
+}
+
+#imag-lat p{
+    margin-top: 10px;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+/*Para los eventos*/
 .event {
     display: flex;
     flex-direction: column;
@@ -49,46 +152,11 @@ p {
 .event p{
     font-size: 17px;
 }
-/* Estilos generales */
-body {
-    background-color: #f2f7fd; /* Color de fondo principal */
-    color: #333; /* Color de texto principal */
-}
 
-.container {
-    margin: 30px auto; /* Margen alrededor del contenedor principal */
-}
-
-/* Estilos para la barra de navegación */
-#main-navbar {
-    background-color: #52117e; /* Color de fondo de la barra de navegación */
-}
-
-.navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffffff; /* Color del texto del brand */
-    margin-right: 15%; /* Ajusta este valor para separar más la marca de los elementos */
-}
-
-.navbar-nav .nav-link {
-    font-size: 18px;
-    color: #0b256e; /* Color del texto de los enlaces */
-}
-
-#imag-lat{
-    background-color: #dde9ff;
-    padding-top: 60px;
-}
-
-#imag-lat p{
-    margin-top: 10px;
-    font-size: 14px;
-    padding-bottom: 20px;
-}
+/*Para las suscripciones*/
 
 #susc{
-    background-color: #dde9ff;
+    background-color: hsl(316, 100%, 90%);
     display: flex;
     justify-content: center; /* Esto centra horizontalmente el contenido */
     text-align: center;
@@ -97,25 +165,58 @@ body {
     padding-bottom: 20px;
 }
 
-/* Estilos de los botones */
-.btn-primary {
-    background-color: #0074D9; /* Color de fondo del botón primario */
-    border-color: #0074D9; /* Color del borde del botón primario */
-}
-
-.btn-primary:hover {
-    background-color: #00509d; /* Color de fondo del botón primario al pasar el mouse */
-    border-color: #00509d; /* Color del borde del botón primario al pasar el mouse */
-}
-
-/* Estilos del footer */
-.footer {
+/*------------------------------------ para bandas ------------------------------------- */
+/*Para los eventos*/
+.mem {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #001f3f; /* Color de fondo del footer */
+    border: 2px solid #7d9dd8;
+    background-color: #dde9ff;
+    border-radius: 5px;
     padding: 20px;
+    margin-bottom: 20px;
 }
 
-.footer p {
-    color: #fff; /* Color del texto del footer */
+.mem h2{
+    text-align: center;
+    padding: 20px;
+}
+.mem h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.mem p{
+    font-size: 17px;
+    text-align: center;
+}
+
+/*Para los albumes
+#eachalbum{
+    width: 90%;
+}*/
+
+.als {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #d114ab;
+    background-color: hsl(316, 100%, 90%);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.als h2{
+    text-align: center;
+    padding: 20px;
+}
+.als h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
 }
