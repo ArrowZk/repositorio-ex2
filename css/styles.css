@@ -1,3 +1,18 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* Estilos de los títulos */
+h1, h2, h3, h4, h5, h6 {
+    color: #001f3f; /* Color de los títulos */
+    padding-top: 30px;
+}
+h1{
+    text-align: center;
+    padding-bottom: 30px;
+}
+h2{
+    font-size: 40px;
+}
 #carousel-main {
     max-width: 80%; /* Ajusta este valor según tus necesidades */
     margin: 0 auto; /* Centra el contenedor horizontalmente */
@@ -7,9 +22,9 @@ p {
     width: 80%; /* Ajusta el ancho del párrafo según tus preferencias */
     margin: 0 auto; /* Centra el párrafo horizontalmente */
     text-align: justify; /* Justifica el texto para que los saltos de línea sean automáticos */
+    font-size: 20px;
 }
 .event {
-    height: 550px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,11 +36,18 @@ p {
     margin-bottom: 20px;
 }
 
+#evt h2{
+    text-align: center;
+    padding: 20px;
+}
 .event h3 {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
+}
+.event p{
+    font-size: 17px;
 }
 /* Estilos generales */
 body {
@@ -39,7 +61,7 @@ body {
 
 /* Estilos para la barra de navegación */
 #main-navbar {
-    background-color: #173757; /* Color de fondo de la barra de navegación */
+    background-color: #52117e; /* Color de fondo de la barra de navegación */
 }
 
 .navbar-brand {
@@ -51,16 +73,28 @@ body {
 
 .navbar-nav .nav-link {
     font-size: 18px;
-    color: #5a80e6; /* Color del texto de los enlaces */
+    color: #0b256e; /* Color del texto de los enlaces */
+}
+
+#imag-lat{
+    background-color: #dde9ff;
+    padding-top: 60px;
 }
 
 #imag-lat p{
     margin-top: 10px;
     font-size: 14px;
+    padding-bottom: 20px;
 }
-/* Estilos de los títulos */
-h1, h2, h3, h4, h5, h6 {
-    color: #001f3f; /* Color de los títulos */
+
+#susc{
+    background-color: #dde9ff;
+    display: flex;
+    justify-content: center; /* Esto centra horizontalmente el contenido */
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* Estilos de los botones */
@@ -76,9 +110,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Estilos del footer */
 .footer {
+    justify-content: center;
+    align-items: center;
     background-color: #001f3f; /* Color de fondo del footer */
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding: 20px;
 }
 
 .footer p {

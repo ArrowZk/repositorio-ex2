@@ -10,17 +10,21 @@
 
     <!-- Agrega tus estilos CSS personalizados -->
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Fuentes de Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
 </head>
 <body>
 
-    <!-- Barra de Navegación -->
-    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
             <a class="navbar-brand" href="index.html">Bandas de J-Rock</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="scandal.html">Scandal</a>
@@ -41,6 +45,7 @@
             </div>
         </div>
     </nav>
+    
 
     <!-- Carrusel de Imágenes -->
     <div id="carousel-main" class="carousel slide" data-bs-ride="carousel">
@@ -112,9 +117,9 @@
         </div>
     </div>
 <!-- Calendario de eventos de bandas de j-rock -->
-    <div class="container mt-4">
+    <div id="evt" class="container mt-4">
         <h2>Próximos Eventos de J-Rock</h2>
-        <div class="row">
+        <div id="aevt" class="row">
             <div class="col-lg-3 col-md-6">
                 <div class="event">
                     <h3>Concierto de X Japan en Tokio</h3>
@@ -181,12 +186,38 @@
             </div>
         </div>
     </div>
-
+    <script>
+        window.addEventListener('resize', setColumnHeight);
+      
+        function setColumnHeight() {
+          const container = document.getElementById('evt');
+          const events = container.getElementsByClassName('event');
+          let maxHeight = 0;
+      
+          for (let i = 0; i < events.length; i++) {
+            events[i].style.height = 'auto'; // Restablece la altura para recalcularla
+            const height = events[i].offsetHeight;
+            if (height > maxHeight) {
+              maxHeight = height;
+            }
+          }
+      
+          // Establece la altura máxima en todos los contenedores de eventos
+          for (let i = 0; i < events.length; i++) {
+            events[i].style.height = maxHeight + 'px';
+          }
+        }
+      
+        // Llamada inicial para establecer la altura de los eventos al cargar la página
+        setColumnHeight();
+      </script>
+      
+      
     <!-- Resto de tu contenido HTML -->
 
-    <div class="container mt-4">
+    <div id="susc" class="container mt-4">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-11">
                 <h2>Suscríbete para recibir actualizaciones</h2>
                 <form>
                     <div class="mb-3">
