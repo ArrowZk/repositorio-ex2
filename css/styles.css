@@ -1,4 +1,4 @@
-/*----------------------------- Estilos generales para todas las paginas -----------------------------------*/
+/*----------------------------------------------------------------- Estilos generales para todas las paginas ------------------------------------------------------------------*/
 /* Estilos para la barra de navegación */
 #main-navbar.navbar {
     background-color: hsl(316, 100%, 90%) !important; /* Color de fondo de la barra */
@@ -79,7 +79,7 @@ p {
     background-color: #d114ab; /* Color de fondo del botón primario */
     border-color: #d21b58; /* Color del borde del botón primario */
     font-size: 25px; /* Tamaño de la fuente del botón */
-    padding: 10px 20px; /* Ajusta el relleno para cambiar el tamaño del botón */
+    padding: 5px; /* Ajusta el relleno para cambiar el tamaño del botón */
 }
 
 .btn-primary:hover {
@@ -87,7 +87,9 @@ p {
     border-color: #149a49; /* Color del borde del botón primario al pasar el mouse */
     color: #333;
 }
-
+.form-group{
+    padding-bottom: 40px;
+}
 /* Estilos del footer */
 .footer {
     justify-content: center;
@@ -100,12 +102,61 @@ p {
     color: #fff; /* Color del texto del footer */
 }
 
-/*------------------------------------ para main ------------------------------------- */
+/*----------------------------------------------------------------------------- para main ------------------------------------------------------------------------- */
+  /* Estilos personalizados para el modal */
+#myModal .modal-dialog {
+    max-width: 80%; /* Ajusta el ancho del modal según sea necesario */
+    margin: 1.75rem auto; /* Centra el modal horizontalmente */
+  }
+  
+  /* Personalizar el botón de cierre */
+  #btnCerrar {
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    color: rgb(247, 184, 255); /* Cambia el color del botón de cierre */
+    background-color: #b131ad;
+  }
+  #btnCerrar:hover {
+    color: #b131ad; /* Cambia el color del botón de cierre */
+    background-color: rgb(247, 184, 255);
+  }
+  
+  /* Personalizar el color del modal */
+  #myModal .modal-content {
+    background-color: #8dccff; /* Cambia el color de fondo del modal */
+  }
+  
+  #myModal .modal-header {
+    text-align: center;
+    background-color: #7d9dd8;; /* Cambia el color de fondo del encabezado del modal */
+    color: white; /* Cambia el color del texto del encabezado del modal */
+  }
+  #myModal .modal-header h5{
+    font-size: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  #myModal .modal-footer .btn-secondary {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #myModal .modal{
+    align-items: center;
+  }
 /*Para carousel*/
 #carousel-main {
-    max-width: 80%; /* ajustar tamaño */
+    max-width: 100%;
     margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding-bottom: 70px;
+    padding-top: 70px;
+    background: linear-gradient(to right, #ff6bf3, hsl(317, 100%, 96%)); /* Cambia los colores según tus preferencias */
+}
+#carousel-main .carousel-item img {
+    object-fit: cover;
+    height: 500px; /* Ajusta la altura*/
 }
 /*Para la imagen en el texto*/
 #imgbp {
@@ -165,8 +216,8 @@ p {
     padding-bottom: 20px;
 }
 
-/*------------------------------------ para bandas ------------------------------------- */
-/*Para los eventos*/
+/*------------------------------------------------------ para bandas --------------------------------------------------------------- */
+/*Para los miembros*/
 .mem {
     display: flex;
     flex-direction: column;
@@ -194,11 +245,7 @@ p {
     text-align: center;
 }
 
-/*Para los albumes
-#eachalbum{
-    width: 90%;
-}*/
-
+/*Para los albumes*/
 .als {
     display: flex;
     flex-direction: column;
@@ -220,10 +267,12 @@ p {
     text-align: center;
     margin-bottom: 20px;
 }
+/*Para el mapa*/
 .mapa {
     display: flex;
     justify-content: center;
 }
+/*Para imagenes extra*/
 #img-curiosidades{
     padding-top: 40px;
 }
@@ -235,5 +284,27 @@ p {
 }
 #carousel-gal .carousel-item img {
     object-fit: cover;
-    height: 900px; /* Ajusta la altura según tus necesidades */
+    height: 900px; /* Ajusta la altura */
+}
+/*------------------------------------------------------ para login --------------------------------------------------------------- */
+/*Para ajustar posicion*/
+#lgns{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#inicios{
+    background-color: hsl(317, 100%, 96%);
+    border: 2px solid #d114ab;
+    justify-content: center; /* Esto centra horizontalmente el contenido */
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#regis{
+    justify-content: center; /* Esto centra horizontalmente el contenido */
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }

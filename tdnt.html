@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J-Rock - Trident</title>
+
+    <!-- Estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos CSS personalizados -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Fuentes de Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+<!-- JavaScript Bundle con Popper -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+    <nav id="main-navbar" class="navbar navbar-expand-lg bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Bandas de J-Rock</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="scandal.html">Scandal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="flow.html">Flow</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="akfg.html">Asian Kung-fu Generation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="tdnt.html">Trident</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Inicio de Sesion</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+<!-- Banda -->
+<h1>TRIDENT</h1>
+<!--Hostoria y logo-->
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="mt-4">
+                <h1 class="display-4">Historia</h1>
+                <p>
+                    TRiDENT (anteriormente conocido como ガールズロックバンド革命 o Girls Rock Band Kakumei) es una banda de rock japonesa compuesta por tres integrantes bajo el sello discográfico Flying Dog Label. Actualmente, el grupo está formado por las miembros Serina, Asaka y Nagisa. Debutaron como un grupo de cuatro integrantes el 25 de junio de 2013 con el sencillo "Purest Blue".
+
+<br>TRiDENT es conocido por su estilo enérgico y su presencia dinámica en el escenario, lo que les ha ganado una base de fans leales en la escena musical japonesa. A lo largo de su carrera, han lanzado una serie de sencillos y álbumes que reflejan su versatilidad musical y su compromiso con la calidad artística.
+
+<br>A pesar de su formación inicial como un grupo de cuatro integrantes, TRiDENT ha demostrado su capacidad para adaptarse y continuar produciendo música de alta calidad con su alineación actual de tres miembros. Su música ha resonado con una audiencia diversa y ha dejado una marca duradera en la escena del rock japonés contemporáneo.
+                </p>
+            </div>
+        </div>
+        <div id="logo" class="col-lg-4">
+            <div class="mt-4">
+            <img src="img/tridlogo.jpg" class="img-fluid" alt="Imagen relacionada con J-Rock">
+            <p>Logo de Trident.</p></div>
+        </div>
+    </div>
+</div>
+<!--locacion-->
+<h2>Lugar de formación: <strong>Tokyo</strong></h2>
+    <!-- Mapa de la banda -->
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1662873.2451231668!2d139.7698121!3d35.50924045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2zVG9raW8sIEphcMOzbg!5e0!3m2!1ses-419!2smx!4v1698463274178!5m2!1ses-419!2smx" width="80%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+<!-- Miembros -->
+<div id="member" class="container mt-4">
+    <h2>Miembros de Trident</h2>
+    <div id="eachmember" class="row">
+        <div class="col-lg-4 col-md-6">
+            <div class="mem">
+                <h3>Asaka</h3>
+                <img src="img/asaka.jpg" class="img-fluid rounded img-thumbnail d-block w-100" alt="Imagen 1">
+                <p><strong>Voz y Guitarra</strong></p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="mem">
+                <h3>Serina</h3>
+                <img src="img/serina.jpg" class="img-fluid rounded img-thumbnail d-block w-100" alt="Imagen 1">
+                <p><strong>Bajo y coros</strong></p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="mem">
+                <h3>Nagisa</h3>
+                <img src="img/nagisa.jpg" class="img-fluid rounded img-thumbnail d-block w-100" alt="Imagen 1">
+                <p><strong>Batería</strong></p>
+            </div>
+    </div>
+</div>
+<script>
+    window.addEventListener('resize', setColumnHeight);
+    window.addEventListener('load', setColumnHeight); // Añade este evento load
+  
+    function setColumnHeight() {
+        const container = document.getElementById('member');
+        const events = container.getElementsByClassName('mem');
+        let maxHeight = 0;
+
+        for (let i = 0; i < events.length; i++) {
+            events[i].style.height = 'auto';
+            const height = events[i].offsetHeight;
+            if (height > maxHeight) {
+                maxHeight = height;
+            }
+        }
+
+        for (let i = 0; i < events.length; i++) {
+            events[i].style.height = maxHeight + 'px';
+        }
+    }
+
+    // Llamada inicial para establecer la altura de los eventos al cargar la página
+    setColumnHeight();
+</script>
+<!-- Albumes -->
+<div id="albums" class="container mt-4">
+    <h2>Albums de Flow</h2>
+    <p>De momento la banda no cuenta con albumes pero ha sacado varios singles como: "Spoopy", "Cry-Out", "Neo Future" y "Repaint"</p>
+</div>
+<!-- Curiosidades -->
+<div class="container">
+    <h2>Curiosidades de Trident</h2>
+    <p> <strong>Nombre Cambiado:</strong>  TRiDENT comenzó su carrera musical bajo el nombre "Girls Rock Band Kakumei" antes de cambiar su nombre a TRiDENT, reflejando su evolución musical y su enfoque renovado en la escena del rock japonés.
+        <br><strong>Influencia Musical Diversa:</strong>  A lo largo de su carrera, TRiDENT ha experimentado con una variedad de géneros musicales, fusionando elementos de rock, pop y punk en su sonido distintivo, lo que les ha permitido atraer a una audiencia diversa y ecléctica.
+        <br><strong>Giras y Actuaciones en Vivo:</strong> TRiDENT ha realizado numerosas giras nacionales e internacionales, presentándose en una variedad de festivales de música y conciertos en vivo, lo que les ha permitido conectar con fanáticos de todo el mundo y expandir su base de seguidores más allá de las fronteras de Japón.
+        <br><strong>Compromiso con la Comunidad:</strong> La banda ha participado activamente en varias actividades benéficas y eventos comunitarios, mostrando su compromiso con causas importantes y su deseo de devolver a la sociedad y a sus seguidores.
+</div>
+
+</div>
+    <!-- Carrusel de Imágenes Para Galeria -->
+
+    <div id="carousel-gal" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/trd1.jpg" class="d-block w-100" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+                <img src="img/trd2.jpg" class="d-block w-100" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
+                <img src="img/trd3.jpg" class="d-block w-100" alt="Imagen 3">
+            </div>
+            <div class="carousel-item">
+                <img src="img/trd4.jpg" class="d-block w-100" alt="Imagen 4">
+            </div>
+            <div class="carousel-item">
+                <img src="img/trd5.jpg" class="d-block w-100" alt="Imagen 5">
+            </div>
+            <div class="carousel-item">
+                <img src="img/trd6.jpg" class="d-block w-100" alt="Imagen 6">
+            </div>
+            <!-- Agrega más imágenes según sea necesario -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-gal" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-gal" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carousel-gal" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carousel-gal" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carousel-gal" data-bs-slide-to="2"></li>
+            <li data-bs-target="#carousel-gal" data-bs-slide-to="3"></li>
+            <li data-bs-target="#carousel-gal" data-bs-slide-to="4"></li>
+            <li data-bs-target="#carousel-gal" data-bs-slide-to="5"></li>
+            <!-- Agrega más indicadores según sea necesario -->
+        </ol>
+    </div>
+    
+
+    <!-- Importar script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light text-center">
+        <div class="container">
+            <p>&copy; 2023 Bandas de J-Rock</p>
+            <p>Alumno: roberto_macias@jrock.com</p>
+        </div>
+    </footer>
+</body>
+</html>

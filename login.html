@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J-Rock - Scandal</title>
+
+    <!-- Estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos CSS personalizados -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Fuentes de Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <nav id="main-navbar" class="navbar navbar-expand-lg bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Bandas de J-Rock</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="scandal.html">Scandal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="flow.html">Flow</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="akfg.html">Asian Kung-fu Generation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tdnt.html">Trident</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Inicio de Sesion</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="lgns" class="container">
+        <div class="row">
+            <div id="inicios" class="col-lg-4">
+                <!-- Formulario de inicio de sesión -->
+                <h2>Iniciar sesión</h2>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                </form>
+            </div>
+            <div class="col-lg-2"></div>
+            <div id="regis" class="col-lg-6">
+                <!-- Formulario de registro -->
+                <h2>Registrarse</h2>
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="username">Nombre de usuario</label>
+                        <input type="text" class="form-control" id="username" placeholder="Ingresa tu nombre de usuario" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailReg">Correo electrónico</label>
+                        <input type="email" class="form-control" id="emailReg" placeholder="Ingresa tu correo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordReg">Contraseña</label>
+                        <input type="password" class="form-control" id="passwordReg" placeholder="Ingresa tu contraseña" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Edad</label>
+                        <input type="number" class="form-control" id="age" placeholder="Ingresa tu edad" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Registrarse</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Agregar enlaces a los scripts de Bootstrap y otros JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light text-center">
+        <div class="container">
+            <p>&copy; 2023 Bandas de J-Rock</p>
+            <p>Alumno: roberto_macias@jrock.com</p>
+        </div>
+    </footer>
+</body>
+</html>
